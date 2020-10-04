@@ -1,1 +1,0 @@
-This project is a collection short pyton scripts I'm using to get a better understanding of the language
