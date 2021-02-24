@@ -3,15 +3,15 @@ import requests
 from twilio.rest import Client
 
 # Twilio account info
-account_sid = 'AC7f5d5cbd6805bc34b8ae74fd852826d5'
-auth_token = '1d8c3deec303e423b235547baffa20d0'
+account_sid = ''
+auth_token = ''
 client = Client(account_sid, auth_token)
 
 endpoint = "https://api.twitch.tv/helix/streams?"
 # Twitch account info
 headers = {"Client-ID": "mfune8cyhzg8habvk93a7ja641tlxg"}
 # Twitch profile and password
-params = {"dougBelcher": "3DAlr1E7R5LUIR48mpJe"}
+params = {"dougBelcher": ""}
 
 response = requests.get(endpoint, params=params, headers=headers)
 json_response = response.json()

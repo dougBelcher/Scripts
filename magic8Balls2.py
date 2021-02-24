@@ -10,4 +10,5 @@ messages = ['It is certain',
     'Outlook not so good',
     'Very doubtful']
 
-print(messages[random.randint(0, len(messages) - 1)])
+if __name__ == "__main__":
+    print(messages[random.randint(0, len(messages) - 1)])

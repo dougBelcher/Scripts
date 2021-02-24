@@ -2,9 +2,11 @@
 import os
 from pathlib import Path
 
-# print(f"{os.name}")
 
-print(f"{os.getcwd()}")
+def info():
+    print(f"\n{os.name}")
+    print(f"{os.getcwd()}")
+
 
 # os.chdir('\\Users\\WRA1523\\AppData\\Local\\Programs\\Python\\Python37-32')
 
@@ -18,10 +20,11 @@ print(f"{os.getcwd()}")
 #    print(f"{entry}")
 
 # Post-3.5
-# print(f"\nPost-3.5: ")
-# with os.scandir() as entries:
-#    for entry in entries:
-#        print(f"{entry.name}")
+def post35():
+    print(f"\nPost-3.5: ")
+    with os.scandir() as entries:
+       for entry in entries:
+           print(f"{entry.name}")
 
 # List all files in a directory using scandir()
 # print(f"\nList all files in a directory using scandir: ")
@@ -53,4 +56,9 @@ print(f"{os.getcwd()}")
 # os.makedirs('2020/02/10')
 
 # Get .txt files
-# for f_name in os.listdir(
+# for f_name in os.listdir()
+
+if __name__ == "__main__":
+    info()
+    post35()
+

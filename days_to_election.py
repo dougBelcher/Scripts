@@ -4,9 +4,9 @@ from datetime import date
 
 
 def election():
-    election_date = datetime.date(2020, 11, 3)
+    election_date = datetime.date(2021, 1, 20)
     today = date.today()
-    print(f'today ({today}) - election date ({election_date}) = days to go: {election_date - today}')
+    print(f'Inauguration date ({election_date}) - today ({today}) = days to go: {election_date - today}')
 
 
 if __name__ == "__main__":
